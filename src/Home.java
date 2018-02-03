@@ -58,6 +58,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         jButton2.setText("Statistics");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("New Book");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -246,6 +251,14 @@ public class Home extends javax.swing.JFrame {
         ob.setVisible(true);
             
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        // Statistics
+        setVisible(false);
+        Statistics ob = new Statistics();
+        ob.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
